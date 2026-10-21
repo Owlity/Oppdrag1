@@ -54,7 +54,7 @@
   border-bottom-right-radius: 0px;
   border-right: 0px;
 }
-
+/* 
 .Navbar ul li:nth-child(2) a {
   border-radius: 0px;
   border-left: 0px;
@@ -65,7 +65,7 @@
   border-radius: 0px;
   border-left: 0px;
   border-right: 0px;
-}
+} */
 
 
 .Navbar ul li:last-child a {
@@ -80,5 +80,5 @@
   align-items: center;
 }
 body {
-    background-color:#fcfcfb
+    background-color:#fcfccf
 }

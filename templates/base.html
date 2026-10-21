@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>{% block title %}Min Flask-app{% endblock %}</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="Navbar">
+        <div class="Navbar_text">
+            <ul>
+                <!-- Here I used ul li because it is the standard bullet point format. The first line of code is the "first child" -->
+                <li class="nav_1"><a href="{{ url_for('index') }}">Shopping</a></li>
+                <li class="nav_2"><a href="{{ url_for('about') }}">About Us</a></li>
+                <!-- <li class="nav_2"><a href="work.html">Work</a></li>
+                <li class="nav_3"><a href="galleri.html">Gallery</a></li> -->
+            </ul>
+        </div>
+    </div>
+<main>
+ {% block content %}
+ {% endblock %}
+</main>
+</body>
+</html>

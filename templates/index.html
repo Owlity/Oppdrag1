@@ -9,18 +9,24 @@
 </head>
 
 <body>
-    <div class="Navbar">
+    <!-- <div class="Navbar">
         <div class="Navbar_text">
             <ul>
-                <!-- Here I used ul li because it is the standard bullet point format. The first line of code is the "first child" -->
-                <li class="nav_1"><a href="index.html">Home</a></li>
-                <li class="nav_2"><a href="about_me.html">About Me</a></li>
+               Here I used ul li because it is the standard bullet point format. The first line of code is the "first child"
+                <li class="nav_1"><a href="{{ url_for('index') }}">Shopping</a></li>
+                <li class="nav_2"><a href="{{ url_for('about') }}">About Us</a></li>
                 <li class="nav_2"><a href="work.html">Work</a></li>
                 <li class="nav_3"><a href="galleri.html">Gallery</a></li>
             </ul>
         </div>
-    </div>
-    <P>TEST</P>
+    </div> -->
+    {% extends "base.html" %}
+    {% block title %}Forside{% endblock %}
+    {% block content %}
+    <h1>Velkommen</h1>
+    <p>Dette er forsiden.</p>
+    {% endblock %}
+    <P></P>
 </body>
 
 </html>
