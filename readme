@@ -1,0 +1,16 @@
+Hva skal applikasjonen hete?
+    Focus Kafe
+Hvem er brukeren?
+    Brukeren er den som bestiller kaffe
+Hvilket problem løser applikasjonen?
+    istedet for å dra til kafeen for kaffe kan du heller bestille hjem.
+Hvilke sider trenger du?
+    Front page, about us, bestilling
+Hvilken informasjon skal brukeren kunne sende inn?
+    hus adresse, produkt type, bank info
+Hva skal Flask gjøre med informasjonen?
+    skrive det i et dokument
+Hvordan skal brukeren navigere uten mus?
+    keyboard
+Hvordan sikrer du at skjema, tekst og farger er tilgjengelige?
+    bruk color wheel, lag klar kontrast men pass på at det ser bra ut fortsatt.2

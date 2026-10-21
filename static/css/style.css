@@ -1,0 +1,84 @@
+.Navbar_text {
+  display: flex;
+  flex-direction: row-reverse;
+
+
+  color: #f0f8ff;
+
+}
+
+/* Sends the navbar to the bottom*/
+
+.Navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  border-radius: 27px;
+  background-color: #212121;
+  /* A little birghter black for it to stand out a little more*/
+}
+
+.Navbar ul li {
+  float: left;
+  /*puts the code in a row rather than a column */
+}
+
+.Navbar ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+  text-align: center;
+  padding: 3vh 15vh;
+  border-radius: 27px;
+  /* styling for the font, hitbox, and general size of the navbar*/
+
+  border-color: #dfc793;
+  border-style: solid;
+  ;
+  /* creates an outline */
+  transition: border 0.5s ease-in-out;
+  /* Create a smooth hover transition */
+}
+
+.Navbar ul li a:hover {
+  border-color: rgb(255, 191, 0);
+}
+
+/* creates a nice transition */
+.Navbar ul li:first-child a {
+
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: 0px;
+}
+
+.Navbar ul li:nth-child(2) a {
+  border-radius: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.Navbar ul li:nth-child(3) a {
+  border-radius: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+
+.Navbar ul li:last-child a {
+  border-left: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body {
+    background-color:#fcfcfb
+}
