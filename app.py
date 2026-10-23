@@ -11,12 +11,16 @@ def index():
 def order():
     itemliste = ["mus", "iphone", "valve", "uno", "3ds"]
     if request.method == "POST":
-        produkt = request.form("produkt")
-        items = request.form("items")
+        produkt = request.form.get("produkt")
+        items = request.form.get("items")
+        navn = request.form.get("navn")
+        email = request.form.get("email")
+        pnummer = request.form.get("pnummer")
+        
         
         print(produkt)
         print(items)
-        return render_template("resultat.html", items=items, produkt=produkt)
+        return render_template("resultat.html", items=items, produkt=produkt, navn=navn, pnummer=pnummer, email=email)
     return render_template("orders.html", itemliste=itemliste)
 
 
