@@ -5,7 +5,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+     itemliste = ["mus", "iphone", "valve", "uno", "3ds"]
+
+     if request.method == "POST":
+        nivaa = request.form.get("nivaa")
+        items = request.form.get("items")
+        return render_template("index.html", items=items, nivaa=nivaa)
+
+
 
 @app.route("/about")
 def about():
