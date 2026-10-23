@@ -1,5 +1,6 @@
     {% extends "base.html" %}
     {% block content %}
+    <div class="orderpage">
     <label>hva vil du bestille?</label>
     <form action="/order" method="POST">
         <select name="items" id="items">
@@ -20,4 +21,5 @@
         <button type="submit">Send</button>    
             
     </form>
+    </div>
     {% endblock %}

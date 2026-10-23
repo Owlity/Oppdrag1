@@ -126,3 +126,20 @@ h2 {
 .shoplist img{
   width:11rem;
 }
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: #61f96d;
+  border-style: double;
+  padding: 2rem;
+}
+.orderpage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8rem;
+
+}
