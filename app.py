@@ -7,6 +7,16 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/order")
+def order():
+    itemliste = ["mus", "iphone", "valve", "uno", "3ds"]
+
+    if request.method == "POST":
+        nivaa = request.form.get("nivaa")
+        items = request.form.get("items")
+        return render_template("index.html", items=items, nivaa=nivaa)
+    return render_template("kurs.html", itemliste=itemliste)
+
 
 @app.route("/about")
 def about():

@@ -54,18 +54,18 @@
   border-bottom-right-radius: 0px;
   border-right: 0px;
 }
-/* 
+
 .Navbar ul li:nth-child(2) a {
   border-radius: 0px;
   border-left: 0px;
   border-right: 0px;
 }
 
-.Navbar ul li:nth-child(3) a {
+/* .Navbar ul li:nth-child(3) a {
   border-radius: 0px;
   border-left: 0px;
   border-right: 0px;
-} */
+} */ 
 
 
 .Navbar ul li:last-child a {
@@ -96,4 +96,11 @@ h2 {
 }
 #logo {
   width: 6rem
+}
+.shoplist {
+  display: flex;
+  
+}
+#mus {
+  color: #212121;
 }
