@@ -104,3 +104,25 @@ h2 {
 #mus {
   color: #212121;
 }
+.shoplist {
+  padding:2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-color: #61f96d;
+  border-style: double;
+  border-radius: 2rem;
+  gap: 6rem;
+}
+
+.shoplist div{
+  background-color: aquamarine;
+  padding: 2rem;
+  border-radius: 3rem ;
+  display: flex;
+  align-items:center ;
+  flex-direction: column;
+}
+.shoplist img{
+  width:11rem;
+}

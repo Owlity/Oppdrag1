@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-</head>
-
-<body>
-    <form>
-        <select name="items">
+    {% extends "base.html" %}
+    {% block content %}
+    <label>hva vil du bestille?</label>
+    <form action="/order" method="POST">
+        <select name="items" id="items">
             {% for items in itemliste %}
             <option value="{{ items }}">{{ items }}</option>
             {% endfor %}
         </select>
-        <input type="radio" name="nivaa" value="nybegynner"> Nybegynner
-        <input type="radio" name="nivaa" value="middels"> Middels
-        <input type="radio" name="nivaa" value="avansert"> Avansert
-        <button type="submit">Send inn</button>
+        <p>hvordan vil du betale?</p>
+        <input type="radio" name="produkt" value="med kort" id="produkt"> kort
+        <input type="radio" name="produkt" value="med giftcard"> giftcard
+        <input type="radio" name="produkt" value="fysisk"> fysisk
+        <label>Navn</label>
+        <input type="text" name="navn">
+        <label>E-mail</label>
+        <input type="email" name="email">
+        <label>Personnummer</label>
+        <input type="number" name="pnummer">
+        <button type="submit">Send</button>    
+            
     </form>
-</body>
-
-</html>
+    {% endblock %}
