@@ -1,25 +1,41 @@
-    {% extends "base.html" %}
-    {% block content %}
-    <div class="orderpage">
-    <label>hva vil du bestille?</label>
-    <form action="/order" method="POST">
-        <select name="items" id="items">
-            {% for items in itemliste %}
-            <option value="{{ items }}">{{ items }}</option>
-            {% endfor %}
-        </select>
+{% extends "base.html" %}
+{% block content %}
+<div class="orderpage">
+
+    <div class="produktype">
+        <label>hva vil du bestille?</label>
+        <form action="/order" method="POST">
+            <select name="items" id="items">
+                {% for items in itemliste %}
+                <option value="{{ items }}">{{ items }}</option>
+                {% endfor %}
+            </select>
+    </div>
+
+    <div class="betalingsmetode">
         <p>hvordan vil du betale?</p>
-        <input type="radio" name="produkt" value="med kort" id="produkt"> kort
-        <input type="radio" name="produkt" value="med giftcard"> giftcard
-        <input type="radio" name="produkt" value="fysisk"> fysisk
-       <br><label>Navn</label>
+        <input type="radio" name="produkt" value="med kort" id="produkt"> Kort
+        <input type="radio" name="produkt" value="med giftcard"> Gavekort
+        <input type="radio" name="produkt" value="fysisk"> Fysisk
+    </div>
+
+    <div class="navn">
+        <br><label>Navn</label>
         <input type="text" name="navn"><br>
+    </div>
+
+    <div class="mail">
         <label>E-mail</label>
         <input type="email" name="email"><br>
+    </div>
+
+    <div class="pnum">
         <label>Personnummer</label>
         <input type="number" name="pnummer"><br>
-        <button type="submit">Send</button>    
-            
-    </form>
     </div>
-    {% endblock %}
+
+    <button type="submit">Send</button>
+
+    </form>
+</div>
+{% endblock %}
