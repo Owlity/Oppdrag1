@@ -18,4 +18,21 @@ Hvordan sikrer du at skjema, tekst og farger er tilgjengelige?
 
     JEG ENDRET ALT SAMMEN FORDI JEG HATET IDEEN
 
-    
+
+
+ Hva skal applikasjonen hete?
+    web applicationen heter Niche Shopping
+Hvem er brukeren?
+    Brukeren er folk som er interresert i en tilfeldig seleksjon av objekter som jeg samlet.
+Hvilket problem løser applikasjonen?
+    Denne web buttikken forenkler processen av kjøp via å ikke ha kontoer, log ins og annet bs. du bestiller noe og betaler, så kommer det på døren. Det er også veldig enkelt å forstå.
+Hvilke sider trenger du?
+    For å ha en bruker venlig nettside vil skal jeg ha en main side som viser alle produktene, En bestillings side som også leder til en resultat side. Det skal også være en about us side fordi det bygger troverdighet.
+Hvilken informasjon skal brukeren kunne sende inn?
+    produkt type, mail, betalingsmetode, etc.
+Hva skal Flask gjøre med informasjonen?
+    skrive det i et dokument
+Hvordan skal brukeren navigere uten mus?
+    tab og enter
+Hvordan sikrer du at skjema, tekst og farger er tilgjengelige?
+    bruk color wheel, lag klar kontrast men pass på at det ser bra ut fortsatt. 
